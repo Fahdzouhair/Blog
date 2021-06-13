@@ -32,23 +32,35 @@ module.exports = {
     },
 
     getGuests() {
-        return User.findAll({where: {role: "guest"}});
+        return User.findAll({
+                where: {
+                    role: "guest"
+                }
+        });
     },
 
     getUser(id) {
-        return User.findAll({where:{id: id}});
+        return User.findAll({
+            where:{
+                id: id
+            }
+        });
     },
 
     getUserByEmail(email) {
-        return User.findAll({where: {email: email}});
+        return User.findAll({
+            where: {
+                email: email
+            }
+        });
     },
 
     addUser(user) {
-        User.create(user);
+       return User.create(user);
     },
 
     updateUser(id,user) {
-        User.update(user, {
+      return  User.update(user, {
             where: {
                 id: id
             }
@@ -56,7 +68,7 @@ module.exports = {
     },
 
     deleteUser(id) {
-        User.destroy({  
+      return   User.destroy({  
             where: {
                 id: id,
             }
