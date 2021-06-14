@@ -18,6 +18,31 @@
                 <h1 class="text">Table of Users</h1> 
             </div>
             
+            <div class="add">
+                <form class="form-group " action="/users/add" method="POST">
+                    
+                    <div class="container2">
+                        <h2>Add User</h2>
+                        
+                        <input type="text" class="form__field" placeholder="Username" name="username" id='username1' required />
+                       
+                        <input type="email" class="form__field" placeholder="Email" name="email" id='email1' required />
+                       
+                        <input type="password" class="form__field" placeholder="Password" name="password" id='password1' required />
+                        
+                          
+                        <select class="form__label" name="role" id="role1">
+                            <option value="admin">Admin</option>
+                            <option value="author">Author</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                        
+                        <br>
+                        <button class="btn" type="submit">Add</button>
+                    </div>
+                </form> 
+            </div>
+            
             <div class="table-wrapper">
                 <table class="fl-table">
                     <thead>
@@ -30,36 +55,20 @@
                             <th>Delete</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="data">
                         <tr>
                             <td>1</td>
                             <td>fahd Zouhair</td>
                             <td>fahdzouhair47@gmail.com</td>
                             <td>Admin</td>
-                            <td><button><i class="fa fa-ban" style="font-size:24px"></i></button></td>
-                            <td><button><i class="fa fa-edit" style="font-size:24px"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>fahd Zouhair</td>
-                            <td>fahdzouhair47@gmail.com</td>
-                            <td>Admin</td>
-                            <td><button><i class="fa fa-ban" style="font-size:24px"></i></button></td>
-                            <td><button><i class="fa fa-edit" style="font-size:24px"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>fahd Zouhair</td>
-                            <td>fahdzouhair47@gmail.com</td>
-                            <td>Admin</td>
-                            <td><button><i class="fa fa-ban" style="font-size:24px"></i></button></td>
-                            <td><button><i class="fa fa-edit" style="font-size:24px"></i></button></td>
+                            <td><button id="edit"><i class="fa fa-edit" style="font-size:24px"></i></button></td>
+                            <td><button id="delete"><i class="fa fa-ban" style="font-size:24px"></i></button></td>
+                            
                         </tr>
                     <tbody>
                 </table>
             </div>
     </div>
 </body>
-<script src="javascripts/stats.js"></script>
-<script src="javascripts/app.js"></script>
+<script src="javascripts/script.js"></script> 
 </html>

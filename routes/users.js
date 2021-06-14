@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const usersR = require('../repositories/users');
+const usersR = require('../respositories/users');
 
 /* GET users listing. */
 router.get('/',async function(req, res) {
