@@ -7,7 +7,7 @@ module.exports = {
     const roles1 = ['admin','author','guest'];
     let User = [];
 
-    for (let i=0 ; i<21 ; i++){
+    for (let i=1 ; i<21 ; i++){
         let username;
         let email;
         let password; 

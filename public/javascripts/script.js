@@ -23,7 +23,7 @@ async function getAllUsers(){
 	
 	}
 }
-console.log(edit1);
+
 
 
 //listeners 
